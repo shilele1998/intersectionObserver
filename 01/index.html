@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>网页有很多图片是十分吃流量的，所以没有必要在图片还么有看到的时候就去加载图片 </p>
+    <h2>第一种方案</h2>
+    <p>用window.innerHeight 来获取浏览器窗口的可视高度，用getBoundingClientReact().top获取图片到达浏览器顶部的高度，
+        如果图片没有被看到说明图片距离视窗顶部的距离大于窗口显示的高度 
+    </p>
+    <p>
+        使用scroll滚动事件， 判断每张图片的位置是否出现在可视区域，去遍历图片然后获取每张图片到达浏览器顶部的距离，并且判断如果图片距离顶部的距离小于
+        视窗的高度，那么就需要加载图片 
+    </p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <img data-src="../image/640-1.jpeg"/>
+    <img data-src="../image/640-2.jpeg"/>
+    <img data-src="../image/640-3.jpeg"/>
+    <img data-src="../image/640.jpeg"/>
+    <script  src="index.js"></script>
+</body>
+</html>

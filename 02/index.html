@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>网页有很多图片是十分吃流量的，所以没有必要在图片还么有看到的时候就去加载图片 </p>
+    <h2>第二种方案</h2>
+    <p>
+        用监听滚动条事件这种方案是比较浪费资源的，而且即使图片已经加载了，还是会不断的触发事件，目前最推荐的还是浏览器提供的构造函数intersectionObserver；
+        字面意思是交叉观察，也就是目标元素和可视窗口会产生交叉区域，观察交叉区域发生了什么事情，然后我们需要执行什么程序，
+    </p>
+    <p>
+        const observer = new intersenctionObserver（callback） //回掉函数calllback会触发两次，看见了触发、看不见了触发
+        boserver.observe(需要观察的dom节点)
+        observer.unobserve(需要观察的dom节点) // 取消的方法，图片加载出来没必要在观察
+    </p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <p>loading...</p>
+    <img data-src="../image/640-1.jpeg"/>
+    <img data-src="../image/640-2.jpeg"/>
+    <img data-src="../image/640-3.jpeg"/>
+    <img data-src="../image/640.jpeg"/>
+    <script  src="index.js"></script>
+</body>
+</html>
